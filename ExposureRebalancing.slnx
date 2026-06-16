@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ExposureRebalancing.Console/ExposureRebalancing.Console.csproj" />
+    <Project Path="src/ExposureRebalancing/ExposureRebalancing.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ExposureRebalancing.Tests/ExposureRebalancing.Tests.csproj" />
+  </Folder>
+</Solution>
