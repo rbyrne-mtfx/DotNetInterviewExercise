@@ -8,7 +8,7 @@ namespace ExposureRebalancing.Tests;
 //           | C      | 20       |    40    |    3
 //           | D      | 10       |    20    |    4
 // Expected  | A      | 50       |
-//           | B      | 60       |
+//           | B      | 50       |
 //           | C      | 0        |
 //           | D      | 0        |
 
