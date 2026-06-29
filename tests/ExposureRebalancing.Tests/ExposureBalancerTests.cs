@@ -56,6 +56,21 @@ public class ExposureBalancerTests
     [Test]
     public void Rebalance_Scenario_1_Successful()
     {
+        var entities = new List<Entity>();
+        entities.Add(new Entity("A", 40, 50, 1));
+        entities.Add(new Entity("B", 30, 60, 1));
+        entities.Add(new Entity("C", 20, 40, 1));
+        entities.Add(new Entity("D", 10, 20, 1));
+
+        var rebalancer = new ExposureBalancer(entities);
+
+        rebalancer.Rebalance();
+
+        Assert.That(entities[0].Exposure.Equals(50));
+        Assert.That(entities[1].Exposure.Equals(50));
+        Assert.That(entities[2].Exposure.Equals(0));
+        Assert.That(entities[3].Exposure.Equals(0));
+
     }
 
     [Test]
