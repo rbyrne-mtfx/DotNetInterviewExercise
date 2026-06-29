@@ -59,9 +59,9 @@ public class ExposureBalancerTests
         var entities = new List<Entity>
         {
             new Entity("A", 40, 50, 1),
-            new Entity("B", 30, 60, 1),
-            new Entity("C", 20, 40, 1),
-            new Entity("D", 10, 20, 1)
+            new Entity("B", 30, 60, 2),
+            new Entity("C", 20, 40, 3),
+            new Entity("D", 10, 20, 4)
         };
 
         var rebalancer = new ExposureBalancer(entities);
